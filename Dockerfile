@@ -1,9 +1,9 @@
-FROM centos:6.7
+FROM centos:6
 
 MAINTAINER kevin0209
 
 RUN yum -y update
-RUN yum groupinstall -y Development tools
+RUN yum groupinstall -y development
 RUN yum install -y zlib-dev openssl openssl-devel sqlite-devel bzip2-devel tar wget vim
 
 # Install python 2.7.11
